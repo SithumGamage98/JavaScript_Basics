@@ -1,0 +1,81 @@
+//ARRAYS
+//Create an array
+const vehicles = ['car' ,'bike','bus']
+//Display array all elements
+console.log(vehicles);
+//Display specific array elements
+console.log(vehicles[1]);
+//Add a new element to the array
+vehicles[3]='lorry';
+console.log(vehicles);
+//add an element to end of thge array
+vehicles.push('Bicycle');
+console.log(vehicles);
+//Add an elementt front of the array
+vehicles.unshift('Boat');
+console.log(vehicles);
+//Remove the end value of the array
+vehicles.pop();
+console.log(vehicles);
+//Array is valid or invalid
+console.log(Array.isArray('vehicles'));
+//Get index for any element of the array
+console.log(vehicles.indexOf('bike'));
+
+//OBJECTS IN js
+
+const man = {
+    
+    Name : 'Sithum Gamage',
+    Phone : '0776765654',
+    Address : {
+        
+        city : 'Wellawaya',
+        Street : 'Abawatta Rd'
+        
+    },
+    
+    politics : ['SLPP','UNP','JVP']
+}
+
+console.log(man.Name);
+console.log(man.Name,man.Phone);
+console.log(man.Name,man.Address.city);
+console.log(man.politics[2]);
+
+//ARRAY OBJECTS
+
+const arrOb2 = [
+    
+    //Object 1 INDEX 0
+    {
+        name:'shashi',
+        city:'aluthgama',
+        validAge:false
+        
+    },
+    
+      {
+        name:'Kavin',
+        city:'Kotttawa',
+        validAge:false
+        
+    },
+    
+      {
+        name:'Layan',
+        city:'Balangoda',
+        validAge:true
+        
+    }
+    
+    
+]
+
+console.log('Name is : '+ arrOb2[0].name);
+console.log('City is : '+ arrOb2[2].city);
+
+//Convert to JSON format
+
+const obtJson = JSON.stringify(arrOb2);
+console.log(obtJson);
