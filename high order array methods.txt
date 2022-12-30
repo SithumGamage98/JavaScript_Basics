@@ -1,0 +1,122 @@
+
+
+//Create an array object
+const man = [
+    
+    {
+        Name : "Sithum",
+        isAdult : true,
+        city : "Galle"
+        
+    },
+    
+     {
+        Name : "Malith",
+       isAdult : true,
+        city : "Malabe"
+        
+    },
+    
+     {
+        Name : "Kasun",
+        isAdult : false,
+        city : "Galle"
+        
+    }
+    
+    ];
+    
+    //2nd Method
+    //Using STRUCTURED FOR LOOP
+
+    
+    //High orderd array methoids
+    //forEach method
+man.forEach(function(gazz){
+    
+    console.log(gazz.Name);
+    
+})
+
+//Using array
+
+const pet =["cat","dog","bird"];
+
+pet.forEach(function(petz){
+    
+    console.log(petz );
+    
+    
+}) 
+
+//Map 
+
+const NameArray = man.map(function(manx){
+    
+    return manx.Name;
+    
+})
+//Print new array elements
+console.log(NameArray);
+
+//Filter method
+
+const CityArry = man.filter(function(manzzz){
+    
+    return manzzz.Name=="Sithum";
+    
+})
+console.log(CityArry);
+
+
+
+//How to print only the name of Name==Sithum object
+//Example 01
+
+const CityArry2 = man.filter(function(manzzz){
+    
+    return manzzz.Name=="Sithum";
+    
+}).map(function(nnp){
+    
+    return nnp.city;
+})
+console.log(CityArry2);
+
+
+//Example 02
+//Print rhe name of isAdult==true only
+
+const jList = man.filter(function (lizzy){
+    
+    return lizzy.isAdult==true;
+    
+}).map(function (ses){
+    
+   return ses.Name;
+})
+console.log(jList);
+
+//How to print all the result values as normal outputes
+//Meth 01
+//Using forEach function
+const NameList = man.filter(function(nemcy){
+    
+    return nemcy.city=='Galle';
+    
+    
+}).forEach(function(gax){
+    
+    console.log(gax.Name);
+    
+})
+
+//console.log(NameList);
+
+//Meth02
+//Using for loop from Example 2 resulkts
+for(let i=0; i<jList.length; i++){
+    
+    console.log(jList[i]);
+    
+}
