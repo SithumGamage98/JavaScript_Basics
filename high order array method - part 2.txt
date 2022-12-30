@@ -1,0 +1,59 @@
+
+const Leo = [
+    
+        {
+            Name:"Sithum",
+            project : "Veethyanthara",
+            isOver : false
+            
+        },
+        
+         {
+            Name:"Kasun",
+            project : "Taloo",
+            isOver : false
+            
+        },
+        
+         {
+            Name:"Mihiran",
+            project : "Meega dhara",
+            isOver : true
+            
+        },
+        
+         {
+            Name:"Kalidu",
+            project : "Veethyanthara",
+            isOver : true
+            
+        }
+    
+    
+    ];
+    
+    
+    const NameArray = Leo.forEach(function(cemz){
+        
+        console.log(cemz.Name);
+        
+        
+    })
+    
+    const project = Leo.map(function(messy){
+        
+        return messy.project;
+        
+    })
+    
+    console.log(project);
+    
+    const projArray = Leo.filter(function(cabby){
+        
+        return cabby.isOver==false;
+        
+    }).map(function(semzy){
+        
+        return semzy.project;
+    });
+    console.log(projArray);
