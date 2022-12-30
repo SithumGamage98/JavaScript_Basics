@@ -1,0 +1,71 @@
+//Create an array object
+
+const language = ["Java" , "C" ,"C++","React"];
+
+console.log(language[1]);
+
+//Print all the values by using a for loop
+for(let x=0; x<language.length; x++){
+    
+    console.log("Language is : "+language[x]);
+    
+    
+}
+
+//Print all the values by using a while
+const lanka = ["Java" , "C" ,"C++","React"];
+let y=0;
+while(y<lanka.length){
+    
+    console.log("While Loop Language : "+lanka[y]);
+    y++;
+    
+}
+
+//Create an array object
+const man = [
+    
+    {
+        Name : "Sithum",
+        age : 23,
+        city : "Galle"
+        
+    },
+    
+     {
+        Name : "Malith",
+        age : 23,
+        city : "Malabe"
+        
+    },
+    
+     {
+        Name : "Kasun",
+        age : 23,
+        city : "Wellawattta"
+        
+    }
+    
+    
+    
+    ];
+    
+    console.log(man[2].Name);
+    
+    //Print all the Name values in the array objects
+    //1st method
+    
+    for(let i=0; i<man.length; i++){
+        
+        console.log(man[i].Name);
+        
+        
+    }
+    
+    //2nd Method
+    //Using STRUCTURED FOR LOOP
+    for(let manz of man){
+        
+        console.log(manz.city);
+        
+    }
