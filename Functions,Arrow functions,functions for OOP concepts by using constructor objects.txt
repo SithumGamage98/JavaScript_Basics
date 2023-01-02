@@ -1,0 +1,79 @@
+//Normal functions
+
+//----------Type 01
+function GetFullName(firstName,MiddleName,LastName){
+    
+   console.log("Full Name = "+firstName + MiddleName + LastName);
+    
+}
+
+//Calling function
+GetFullName("Sithum","Sankalpa","Gamage");
+
+//----------Type 2
+function GetFullName2(firstName,MiddleName,LastName){
+    
+   return firstName+MiddleName;
+    
+}
+
+//Calling function
+console.log(GetFullName2("Mahesh","Duggannarala","Gamage"))
+
+
+
+//Arrow functions
+
+//Example 01------------
+
+const Addnum = (num1=56,num2=90)=>{
+    
+    return num1+num2;
+    
+}
+console.log("Total " + Addnum(23,55));
+
+//Example 02 ---------------
+const getFullName = (firstName,LastName) => {
+    
+    return firstName +  LastName;
+    
+}
+//Calling function
+console.log(getFullName("Wanidu"+" "+"Hasaranga")); 
+
+//-----------------------------------Functions for OOP concepts
+//We use --Constructor functions for this --------------
+
+//Crete a Constructor Functions function
+
+function Person(firstName,LastName,dob){
+    
+    this.firstName=firstName;
+    this.LastName=LastName;
+    this.dob=dob;
+    
+    //Create a method
+    this.getBirthYear = function(){
+        
+        return this.dob.getFullYear();
+    }
+    
+    //method for return firstName
+    
+    this.getFirstName = function(){
+        
+        return this.firstName;
+        
+    }
+    
+    
+}
+//Create an object
+const person1 = new Person('Sihtum','Gamage','1998-03-20');
+//Print all the data
+console.log(person1);
+//print only last names
+console.log(person1.LastName);
+//Print thie first name using the function
+console.log(person1.getFirstName());
