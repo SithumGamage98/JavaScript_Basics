@@ -1,0 +1,75 @@
+
+//Create a constructor fuction
+
+
+function Person(Name,age,city){
+   
+    this.Name = Name;
+    this.age = age;
+    this.city = city;
+    this.getCity = function(){
+        return this.city;
+    }
+}
+
+
+//Create an object
+const person1 = new Person('Sithum',25,'Malabe');
+console.log(person1);
+console.log(person1.getCity());
+
+//Create a prototype
+Person.prototype.getCity = function(){
+    return this.city;
+} 
+
+//Create a class
+
+class Person{
+
+   //Create a constructor
+
+    Person (firstname,lastname,dob){
+        this.firstname=firstname;
+        this.lastname=lastname;
+        this.dob = dob;
+
+        
+
+   }
+   
+   getCity(){
+
+        return this.dob;
+
+   }
+}
+
+//Create an object
+
+const per1 = new Person('Shashi','Dilshika','2022-02-08');
+console.log(per1.getCity);
+console.log("per1");
+
+//Example 2
+
+class uni{
+
+    uni(Uname,address,rate){
+        this.Uname = Uname;
+        this.address = address;
+        this.rate = rate;
+    }
+
+    getAddress(){
+
+            return this.address;
+
+    }
+
+}
+
+//Create an object
+
+const uni1 = new uni("SLIIT","Malabe",2);
+console.log("The address is : "+uni.getAddress);
