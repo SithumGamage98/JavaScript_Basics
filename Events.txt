@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>My java script</title>
+</head>
+
+
+<body>
+    <h1>Hai Sithum..</h1>
+    <h1 id="demo">Beuti of the SLIIT</h1>
+
+    <script>document.getElementById("demo").innerHTML="SLIIT is not the best university in Sri lanka"</script>
+    <button onclick="alert('Clicked successfully')">Click Me First</button>
+    <button id="clickMe">Click Me As Well</button>
+
+    <scipt src="try.js"></scipt>
+</body>
+
+</html>
+
+--------------------In Js file-------------------
+
+var button1 = document.getElementById("clickMe");
+
+button1.addEventListener("click",doSomething);
+
+function doSomething(event){
+
+    console.log(event);
+
+}
